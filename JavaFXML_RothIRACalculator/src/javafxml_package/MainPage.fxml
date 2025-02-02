@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxml_package.MainPageController">
+   <children>
+      <Text fill="#f58025" layoutX="105.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roth IRA Calculator">
+         <font>
+            <Font name="Optima Bold Italic" size="48.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Text>
+      <Text fill="#0069aa" layoutX="14.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your age:" wrappingWidth="101.26822662353516">
+         <font>
+            <Font name="Optima Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ageInput" layoutX="115.0" layoutY="114.0" prefHeight="26.0" prefWidth="63.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="investmentInput" layoutX="14.0" layoutY="267.0" prefHeight="26.0" prefWidth="63.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="resultLabel" alignment="TOP_LEFT" layoutX="212.0" layoutY="290.0" prefHeight="148.0" prefWidth="437.0" textFill="#f58025">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Text fill="#0069aa" layoutX="370.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saved Money" wrappingWidth="140.26822662353516">
+         <font>
+            <Font name="Optima Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#0069aa" layoutX="14.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of Money Invested per Month:" wrappingWidth="157.44296646118164">
+         <font>
+            <Font name="Optima Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="estimateButton" layoutX="286.0" layoutY="101.0" mnemonicParsing="false" onAction="#calculateInvestment" prefHeight="137.0" prefWidth="308.0" text="Calculate">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.3990498812351544" endY="0.6484560570071258" startX="0.39429928741092635" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9607843160629272" green="0.501960813999176" blue="0.14509804546833038" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9210526347160339" green="0.4731055200099945" blue="0.10660331696271896" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Slider fx:id="returnRateSlider" blockIncrement="4.0" layoutX="23.0" layoutY="347.0" max="10.0" min="6.0" prefHeight="24.0" prefWidth="147.0" />
+      <Text fill="#0069aa" layoutX="14.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Annual Return Rate( % ) :" wrappingWidth="182.44296646118164">
+         <font>
+            <Font name="Optima Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="withdrawalAgeInput" layoutX="14.0" layoutY="189.0" prefHeight="26.0" prefWidth="63.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#0069aa" layoutX="14.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At what age would you like to withdraw?" wrappingWidth="182.44296646118164">
+         <font>
+            <Font name="Optima Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f58025" layoutX="23.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 6" wrappingWidth="14.575519561767578">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#f58025" layoutX="57.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="14.575519561767578">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#f58025" layoutX="86.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 8" wrappingWidth="14.575519561767578">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#f58025" layoutX="124.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="14.575519561767578">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#f58025" layoutX="157.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="26.575519561767578">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <ColorAdjust>
+         <input>
+            <ColorAdjust />
+         </input>
+      </ColorAdjust>
+   </effect>
+</Pane>

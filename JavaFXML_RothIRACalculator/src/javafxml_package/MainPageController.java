@@ -48,8 +48,8 @@ public class MainPageController implements Initializable {
                 resultLabel.setText("Age must be greater than 0.");
                 return;
             }
-            if (monthlyAmount <= 0 || monthlyAmount > 500) {
-                resultLabel.setText("Investment must be between $1 and $500 per month.");
+            if (monthlyAmount <= 0 || monthlyAmount > 583.33) {
+                resultLabel.setText("Investment must be between $1 and $583 per month.");
                 return;
             }
             if (withdrawalAge <= age) {
